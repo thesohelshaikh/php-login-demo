@@ -20,7 +20,7 @@
         <div class="display-4">
             Log In
         </div>
-        <form class="py-5 text-center" action="login.php">
+        <form class="py-5 text-center" action="login.php" method="POST">
             <div class="form-group row">
                 <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
                 <div class="col-sm-10">
@@ -34,10 +34,10 @@
                 </div>
             </div>
             <div class="custom-control custom-checkbox py-2">
-                <input type="checkbox" class="custom-control-input" id="customControlAutosizing" required>
+                <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
                 <label class="custom-control-label" for="customControlAutosizing">Remember me</label>
             </div>
-            <button type="submit" class="btn btn-primary">Login</button><br/>
+            <button type="submit" name="submit" class="btn btn-primary">Login</button><br/>
             Don't have an account? <a href="signup.html">Sign up</a>
         </form>
 
